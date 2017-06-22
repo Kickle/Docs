@@ -1,0 +1,80 @@
+
+# Project information
+site_name: 'KICKLE'
+site_description: 'KICKLE Admin Configuration docs'
+site_author: 'Kickle'
+#site_url: 'https://my-github-handle.github.io/my-project'
+
+# Repository
+#repo_name: 'my-github-handle/my-project'
+#repo_url: 'https://github.com/my-github-handle/my-project'
+
+# Copyright
+copyright: 'Copyright &copy; 2017 - 2018 Kickle'
+
+# Documentation and theme
+theme: 'material'
+
+# Options
+extra:
+  logo: ''
+  palette:
+    primary: 'blue'
+    accent: 'teal'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  #  text: 'Ubuntu'
+  #  code: 'Ubuntu Mono'
+  #social:
+   # - type: 'github'
+   #   link: 'https://github.com/john-doe'
+   # - type: 'twitter'
+   #   link: 'https://twitter.com/jonh-doe'
+   # - type: 'linkedin'
+   #   link: 'https://de.linkedin.com/in/john-doe'
+
+# Extensions 
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc(permalink=true)
+  - pymdownx.arithmatex
+  - pymdownx.betterem(smart_enable=all)
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist(custom_checkbox=true)
+  - pymdownx.tilde
+
+# Page tree
+pages:
+  - Home: index.md
+  - Kickle Admin Guide:
+    - Assistance: admin-guide/help menu and remote assistance.md
+    - Configuration :
+      - Configuration On-Premise: admin-guide/Configuring Exchange On-Premise and Skype for Business On-Premise Accounts.md
+      - Configuration On Line : admin-guide/Configuring Exchange Online and Skype for Business Online (Office 365) Accounts.md
+      - Configuration Hybrid : admin-guide/Configuring Exchange Online and Skype for Business On Premise (Hybrid).md
+      - Connecting and Setting Up Kickle : admin-guide/Connecting and setting Kickle.md
+    - Network:
+      - Protocols and port requirements : admin-guide/protocols and port requirements.md
+      - Bandwith : admin-guide/bandwidth.md
+      - Proxy : admin-guide/proxy.md
+    - Requirements: admin-guide/requirements and compatibility.md
+    - Security: admin-guide/customize security settings.md
+    - Update: admin-guide/how to update.md
+  - About: about.md
+  
+  
+
+ 
+  
