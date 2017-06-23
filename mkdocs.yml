@@ -3,11 +3,7 @@
 site_name: 'KICKLE'
 site_description: 'KICKLE Admin Configuration docs'
 site_author: 'Kickle'
-#site_url: 'https://my-github-handle.github.io/my-project'
-
-# Repository
-#repo_name: 'my-github-handle/my-project'
-#repo_url: 'https://github.com/my-github-handle/my-project'
+site_url: 'https://docs.kickle.com'
 
 # Copyright
 copyright: 'Copyright &copy; 2017 - 2018 Kickle'
@@ -19,11 +15,12 @@ theme: 'material'
 extra:
   logo: ''
   palette:
-    primary: 'blue'
+    primary: 'deep purple'
     accent: 'teal'
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
+  logo: 'icone.png'
   #  text: 'Ubuntu'
   #  code: 'Ubuntu Mono'
   #social:
