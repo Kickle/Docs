@@ -62,6 +62,7 @@ pages:
       - Configuration On Line : admin-guide/Configuring Exchange Online and Skype for Business Online (Office 365) Accounts.md
       - Configuration Hybrid : admin-guide/Configuring Exchange Online and Skype for Business On Premise (Hybrid).md
       - Connecting and Setting Up Kickle : admin-guide/Connecting and setting Kickle.md
+      - Features Configuration : admin-guide/features-configuration.md
     - Network:
       - Protocols and port requirements : admin-guide/protocols and port requirements.md
       - Bandwith : admin-guide/bandwidth.md
