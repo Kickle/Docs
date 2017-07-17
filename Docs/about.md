@@ -3,6 +3,6 @@
 
 **Configuring and Administering Kickle.**
 
-*Version 2.0*
+*Version 2.3*
 
-*Last update: January 12th 2017*
+*Last update: July 17th 2017*
