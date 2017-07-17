@@ -17,7 +17,7 @@ KICKLE was developed based on Microsoft Skype for Business APIs and is thus reli
 - A screen with a HDMI connection.
 - Ideally, a “CEC over HDMI” compatible screen.
 - A “1366 x 768 pixels” minimal screen resolution.
-- Protocols and ports requirements as described page 17.
+- [Protocols and ports requirements](protocols and port requirements.md)
 
 KICKLE is compatible with :
 
