@@ -70,6 +70,10 @@ pages:
     - 4 - Security: admin-guide/customize security settings.md
     - 5 - Update: admin-guide/how to update.md
     - 6 - Assistance: admin-guide/help menu and remote assistance.md
+  - Manage:
+    - Start in Admin mode : manage/admin-mode.md
+    - Join Kickle to Active Directory : manage/ad.md
+    - Manage Kickle with Microsoft Intune : manage/intune.md
   - About: about.md
   
   
