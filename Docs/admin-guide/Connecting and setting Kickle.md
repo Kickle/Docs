@@ -10,12 +10,86 @@
 
 ### Connecting KICKLE
 
-Each KICKLE is embedded with its own website and settings GUI. First, ensure that KICKLE is on a DHCP network. Then, make sure that your computer is on the same sub-network.
+Each Kickle embed his own website and settings GUI. First, ensure that Kickle is on a DHCP network. Then, make sure that your computer is on the same sub-network.
 
 - Connect KICKLE to the screen's HDMI port.
-- If the screen is a touchscreen, connect the touchscreen source to KICKLE via USB. If not, connect a USB mouse.
-- Connect the camera and the microphone to the USB ports **at the back of KICKLE**.
+- If the screen is a touchscreen, connect the touchscreen source to Kickle via USB. If not, connect a USB mouse.
+- Connect the camera and the microphone to the USB ports **at the back of Kickle**.
 - Start KICKLE by press the power button.
+
+#### Setting Up Kickle Using First Time Configuration
+
+Before starting the configuration, make sure the Kickle requirements are met.
+
+To start configuration, press the configuration icon.
+
+![fisrtconfig] (/img/1stConfig1.png)
+
+Here, you'll need to choose your preferred language setting, keyboard language layout and your Kickle location time zone.
+
+!!! Information
+
+    - Kickle provide 3 differents languanges (English, French and German).
+
+    - The next button will turn bold once you have selected all the informations.
+
+![firstconfig] (/img/1stConfig2.png)
+
+Here, you have to select the network configuration, you can set as **dynamic** or **static** connection.
+
+!!! Information
+    If you set it as a static connection, be sure the ip address allows to connect to the internet.
+
+![firstconfig] (/img/1stConfig3.png)
+
+Here, if your internet connection requires a proxy, you can enable this feature.
+
+!!! Information
+    We strongly recommend you to bypass your proxy with a specific rule. Proxy configuration is very complex within a Skype for Business infrastructure.
+
+![firstconfig] (/img/1stConfig4.png)
+
+Here, you must fill out Skype authentication. Skype default setting is Office 365, but if you need to configure it with an account of on-premise, be sure to uncheck **SKYPE is Office 365**.
+
+!!! Information
+    Press the **Test** icon to process test connections. If the test fails, we advise you to check the authentication account whether it has been activated or not and we also suggest that to allow internet connection.
+
+    Once you have **OK connection**, press the next button to continue.
+![firstconfig] (/img/1stConfig5.png)
+
+!!! Information
+
+    - Office 365 EWS URL address:
+      Type or Copy--> https://outlook.office365.com/EWS/Exchange.asmx <--end of copy.
+
+    - How to find EWS URL address on on-premise server :
+      Open the Exchange Management Shell on the Exchange server
+      Type or copy--> ***Get-WebServicesVirtualDirectory |Select name, *url* | fl*** <--end of copy.
+![firstconfig] (/img/1stConfig6.png)
+
+Here, you can select the scale of display that your kickle screen use and turn screen off features. 
+
+!!! Information
+
+    - Kickle compatible with any kind of screen whether if this touchscreen panel or non touchscreen panel. A screen with full HD or 4K screen.
+
+    - The default of turn screen off features is 0.
+
+![firstconfig] (/img/1stConfig7.png)
+
+Here, you can add local NTP server and enable icmp request for your KICKLE device.
+
+![firstconfig] (/img/1stConfig8.png)
+
+Here, you can customize the mail invitation template, but if you prefer by default, you can skip it.
+
+![firstconfig] (/img/1stConfig9.png)
+
+**Congratulation!**
+
+To complete the configuration, press the reboot icon to apply the changes.
+
+![firstconfig] (/img/1stConfig10.png)
 
 #### Setting Up KICKLE
 
