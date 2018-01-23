@@ -10,32 +10,32 @@
 
 ### Connecting KICKLE
 
-Each Kickle embed his own website and settings GUI. First, ensure that Kickle is on a DHCP network. Then, make sure that your computer is on the same sub-network.
+Each Kickle embed its own website and settings GUI. First, ensure that Kickle is on a DHCP network. Then, make sure that your computer is on the same sub-network.
 
 - Connect KICKLE to the screen's HDMI port.
-- If the screen is a touchscreen, connect the touchscreen source to Kickle via USB. If not, connect a USB mouse.
-- Connect the camera and the microphone to the USB ports **at the back of Kickle**.
-- Start KICKLE by press the power button.
+- If the screen is a touchscreen, connect the touchscreen source to Kickle via USB. If not, connect an USB mouse.
+- Connect the camera and the microphone to USB ports **at the back of Kickle**.
+- Start KICKLE by pressing the power button.
 
 #### Setting Up Kickle Using First Time Configuration
 
-Before starting the configuration, make sure the Kickle requirements are met.
+Before starting the configuration, make sure Kickle requirements are met.
 
 To start configuration, press the configuration icon.
 
 ![fisrtconfig] (/img/1stConfig1.png)
 
-Here, you'll need to choose your preferred language setting, keyboard language layout and your Kickle location time zone.
+First, you'll need to choose your preferred language setting, keyboard language layout and Kickle's time zone.
 
 !!! Information
 
-    - Kickle provide 3 differents languanges (English, French and German).
+    - Kickle provides 3 differents languanges (English, French and German).
 
     - The next button will turn bold once you have selected all the informations.
 
 ![firstconfig] (/img/1stConfig2.png)
 
-Here, you have to select the network configuration, you can set as **dynamic** or **static** connection.
+Second step, you can select the network configuration, you can set **dynamic** or **static** connection.
 
 !!! Information
     If you set it as a static connection, be sure the ip address allows to connect to the internet.
@@ -49,10 +49,10 @@ Here, if your internet connection requires a proxy, you can enable this feature.
 
 ![firstconfig] (/img/1stConfig4.png)
 
-Here, you must fill out Skype authentication. Skype default setting is Office 365, but if you need to configure it with an account of on-premise, be sure to uncheck **SKYPE is Office 365**.
+Here, you must fill out Skype authentication. Skype default setting is Office 365, but if you need to configure it with an on-prem account, be sure to uncheck **SKYPE is Office 365**.
 
 !!! Information
-    Press the **Test** icon to process test connections. If the test fails, we advise you to check the authentication account whether it has been activated or not and we also suggest that to allow internet connection.
+    Press the **Test** icon to process test connections. If the test fails, we advise you to check the authentication account whether it has been activated or not and we also suggest that to check network connection.
 
     Once you have **OK connection**, press the next button to continue.
 ![firstconfig] (/img/1stConfig5.png)
@@ -67,21 +67,21 @@ Here, you must fill out Skype authentication. Skype default setting is Office 36
       Type or copy--> ***Get-WebServicesVirtualDirectory |Select name, *url* | fl*** <--end of copy.
 ![firstconfig] (/img/1stConfig6.png)
 
-Here, you can select the scale of display that your kickle screen use and turn screen off features. 
+Here, you can select the display scaling that your kickle screen use and turn screen off features. 
 
 !!! Information
 
-    - Kickle compatible with any kind of screen whether if this touchscreen panel or non touchscreen panel. A screen with full HD or 4K screen.
+    - Kickle is compatible with any kind of screen whether if this touchscreen panel or non touchscreen panel. The best configuration is full-HD or 4K touchscreen
 
-    - The default of turn screen off features is 0.
+    - The default value of turn screen off features is 0.
 
 ![firstconfig] (/img/1stConfig7.png)
 
-Here, you can add local NTP server and enable icmp request for your KICKLE device.
+Here, you can add local NTP server and enable icmp request for your Kickle device.
 
 ![firstconfig] (/img/1stConfig8.png)
 
-Here, you can customize the mail invitation template, but if you prefer by default, you can skip it.
+Here, you can customize the mail invitation template.
 
 ![firstconfig] (/img/1stConfig9.png)
 
