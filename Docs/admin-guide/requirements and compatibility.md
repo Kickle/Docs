@@ -23,7 +23,7 @@ KICKLE is compatible with :
 
 - All Skype for Business architectures (online, One-Premise, hosted).
 - All Skype for Business Server 2013 architectures (online, One-Premise, hosted).
-- All Exchange 2010 (individual-forest) or later (individual or multi-forest) architectures (online, One-Premise, hosted).
+- All Exchange 2013 (individual-forest) or later (individual or multi-forest) architectures (online, One-Premise, hosted).
 
 The following licenses are required for use with KICKLE :
 
