@@ -72,13 +72,15 @@ Kickle is using some specific ports to discuss with our cloud platform
 
 |From   |To   | Protocol and Port   |Comments   |
 |---|---|---|---|
-| Kickle   | cloud.kickle.com   | HTTPS (8705)  | Authentication   |
-| Kickle  | cloud.kickle.com  | HTTPS (8432)  | Updates  |
+| Kickle   | cloud.kickle.com   | HTTPS (8705)  | Authentication. Only for version below 2.0.17317.02  |
+| Kickle  | cloud.kickle.com  | HTTPS (8432)  | Updates. Only for version below 2.0.17317.02  |
+| Kickle   | *.kickle.com   | HTTPS (443)  | Authentication, Updates, Portal   |
 | Kickle  | Any  | HTTP (80)  | Quick Assist, Internet Navigation  |
 | Kickle  | Any  | HTTPS (443)  | Quick Assist, Internet Navigation  |
 
 !!! note
-    We are going to update our platform to use HTTPS on 443 as soon as possible
+    From version 2.0.17317.02 to latest releases, we are now using only HTTPS(443)
+    The best option is to configured a wildcard. All URLs are: api.kickle.com, auth.kickle.com, hub.kickle.com, portal.kickle.com
 
 ### MirrorOP / Wireless
 
