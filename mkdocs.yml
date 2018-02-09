@@ -74,8 +74,8 @@ pages:
     - Start in Admin mode : manage/admin-mode.md
     - Join Kickle to Active Directory : manage/ad.md
     - Manage Kickle with Microsoft Intune : manage/intune.md
-  - About: about.md
-  
+  - Additional Features:
+    - Wifi Hotspot : features/hotspot.md
   
 
  
