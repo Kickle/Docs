@@ -7,13 +7,12 @@
 	Public : Yes
     Version : 1.0
 -->
-!!! important "Important"
-    This paragraph applies to Exchange Online and Skype for Business Online (Office 365) infrastructures only. If you are using an Exchange On-Premise or Skype for Business On-Premise solution, please refer to section. **Configuring Exchange On-Premise**
-
-!!! note "Note"
-    You must have sufficient rights to access your Office 365 using Exchange Remote PowerShell.
-
 ### Creating and Configuring a Room Mailbox Account for Exchange Online (Office 365)
+
+!!! Info "Info "
+
+    - This paragraph applies to Exchange Online and Skype for Business Online (Office 365) infrastructures only. If you are using an Exchange On-Premises or Skype for Business On-Premises solution, please refer to the section: [Configuring Exchange On-Premises](Configuring Exchange On-Premise and Skype for Business On-Premise Accounts.md).
+    - You must have sufficient rights to access your Office 365 using Exchange PowerShell remotely.
 
 #### Starting PowerShell
 
@@ -22,13 +21,13 @@ The following commands are PowerShell commands. To launch PowerShell, simply sea
 ![Power-Shell] (/img/power-shell1.png)
 ![Power-Shell] (/img/power-shell2.png)
 
-For more information, please refer to the following TechNet article :
+For more information, please refer to the following TechNet article:
 
 ***<https://technet.microsoft.com/fr-fr/library/bb978526.aspx>.***
 
 #### Logging on to Exchange Online
 
-To use an existing Room Mailbox account (KICKLE01 in the example below), run the PowerShell cmdlet below to log in to Exchange Online:
+To use an existing Room Mailbox account (Kickle01 in the example below), run the PowerShell cmdlet below to log in to Exchange Online:
 
 ``` powershell
 $UserCredential = Get-Credential
@@ -46,13 +45,13 @@ Run the cmdlet below to import your session so you can run Exchange commands in 
 Import-PSSession $Session
 ```
 
-#### Creating a new Exchange Room Mailbox
+#### Creating a New Exchange Room Mailbox
 
-Follow the steps below to create a new Room Mailbox account for KICKLE. To use an existing Room Mailbox account, you can skip this and read Using an existing Room Mailbox account in Exchange Online (Office 365).
-However, we recommend that you create a new Room Mailbox account (delete the existing one then recreate it).To create a new Room Mailbox account (KICKLE01 in the example below), run the cmdlet below:
+Follow the steps below to create a new Room Mailbox account for Kickle. To use an existing Room Mailbox account, you can skip this and read Using an existing Room Mailbox account in Exchange Online (Office 365).
+However, we recommend that you create a new Room Mailbox account (delete the existing one and then recreate it).To create a new Room Mailbox account (Kickle01 in the example below), run the cmdlet below:
 
 ``` powershell
-$rm="KICKLE01@mycompany.com"
+$rm="Kickle01@mycompany.com"
 ```
 
 ``` powershell
@@ -60,16 +59,16 @@ $newpass='pass@word1'
 ```
 
 ``` powershell
-New-Mailbox -MicrosoftOnlineServicesID $rm -room -Name "KICKLE Room" -RoomMailboxPassword (ConvertTo-SecureString $newpass -AsPlainText -Force) -EnableRoomMailboxAccount $true
+New-Mailbox -MicrosoftOnlineServicesID $rm -room -Name "Kickle Room" -RoomMailboxPassword (ConvertTo-SecureString $newpass -AsPlainText -Force) -EnableRoomMailboxAccount $true
 ```
 
-#### Using an existing Room Mailbox account in Exchange Online (Office 365)
+#### Using an Existing Room Mailbox Account in Exchange Online (Office 365)
 
-If you are already using a Room Mailbox account for the KICKLE room, you can follow the steps below. However, we recommend that you delete and then recreate the account.
-To use an existing Exchange account (KICKLE01 in this example), execute the following cmdlet:
+If you are already using a Room Mailbox account for the Kickle room, you can follow the steps below. However, we recommend that you delete and then recreate the account.
+To use an existing Exchange account (Kickle01 in this example), execute the following cmdlet:
 
 ``` powershell
-$rm="KICKLE01@mycompany.com"
+$rm="Kickle01@mycompany.com"
 ```
 
 ``` powershell
@@ -77,7 +76,7 @@ $newpass='pass@word1'
 ```
 
 ``` powershell
-Set-Mailbox -MicrosoftOnlineServicesID $rm -room -Name "KICKLE Room" -RoomMailboxPassword (ConvertTo-SecureString $newpass -AsPlainText -Force) -EnableRoomMailboxAccount $true
+Set-Mailbox -MicrosoftOnlineServicesID $rm -room -Name "Kickle Room" -RoomMailboxPassword (ConvertTo-SecureString $newpass -AsPlainText -Force) -EnableRoomMailboxAccount $true
 ```
 
 #### Configuring the Exchange Room Mailbox Account
@@ -92,8 +91,8 @@ Set-CalendarProcessing -Identity $rm -AutomateProcessing AutoAccept -AddOrganize
 
 ![mail-tip] (/img/mail-tips.png)
 
-!!! Tip "Configuring mailTip:"
-    Set-Mailbox -Identity $rm -MailTip "This room is equipped with a KICKLE videoconferencing system. Click on the Skype for Business Meeting button if you wish to use KICKLE."
+!!! Tip "Configuring MailTip:"
+    Set-Mailbox -Identity $rm -MailTip "This room is equipped with a Kickle videoconferencing system. Click on the Skype for Business Meeting button if you wish to use Kickle."
 
 You can also use the following cmdlets to adapt the message according to the exact location of the room.
 
@@ -102,19 +101,19 @@ $Temp = Get-Mailbox $rm
 ```
 
 ``` powershell
-$Temp.MailTipTranslations += "ES: Esta sala de reuniones tiene una solución KICKLE"
+$Temp.MailTipTranslations += "ES: Esta sala de reuniones tiene una solución Kickle"
 ```
 
 ``` powershell
 Set-Mailbox -Identity $rm -MailTipTranslations $Temp.MailTipTranslations
 ```
 
-#### Configuring the Message Received When a KICKLE Room is Booked
+#### Configuring the Message Received When a Kickle Room is Booked
 
 You can configure the message that the meeting organizer will receive when booking the room by running the following cmdlet:
 
-!!! Tip "Configuring the message received when a KICKLE room is booked :"
-    Set-CalendarProcessing -Identity $rm –AddAdditionalResponse $TRUE –AdditionalResponse “If the meeting has been refused, it is because the meeting room is not available at the time specified.```<br><br>```If the meeting is accepted, congratulations! You have planned your KICKLE meeting successfully.```<br><br>```Do not forget that KICKLE should not wait in the waiting room. To check, open the KICKLE meeting and then click on Meeting Options. Check that no guest is waiting in the waiting room. Also check that KICKLE is the organizer.”
+!!! Tip "Configuring the message received when a Kickle room is booked:"
+    Set-CalendarProcessing -Identity $rm –AddAdditionalResponse $TRUE –AdditionalResponse “If the meeting has been refused, it is because the meeting room is not available at the time specified.```<br><br>```If the meeting is accepted, congratulations! You have planned your Kickle meeting successfully.```<br><br>```Do not forget that Kickle should not wait in the waiting room. To check, open the Kickle meeting and then click on Meeting Options. Check that no guest is waiting in the waiting room. Also check that Kickle is the organizer.”
 
 The message received by the organizer will be as follows:
 
@@ -122,13 +121,13 @@ The message received by the organizer will be as follows:
 
 #### Allowing a Person Outside the Company to Schedule a Meeting
 
-If you wish to enable the use of KICKLE in "Planned Meeting" mode by somebody who does not belong to the company, run the command below:
+If you wish to enable the use of Kickle in "Planned Meeting" mode by somebody who does not belong to the company, run the command below:
 
 ``` powershell
 Set-CalendarProcessing $rm –ProcessExternalMeetingMessages $true
 ```
 
-Companies who want to use your KICKLE must add your domain as a RemoteDomain.***The following commands must be executed on the Office 365 infrastructure of your partner.***
+Companies who want to use your Kickle must add your domain as a RemoteDomain.***_The following commands must be executed on your external collaborator's Office 365 infrastructure_***.
 
 ``` powershell
 New-RemoteDomain –DomainName mycompany.com –Name mycompany.com
@@ -153,11 +152,11 @@ Then, assign the corresponding license (P2, P3 or E1, E3, E4 license)
 ![Office365] (/img/Office36502.png)
 ![Office365] (/img/Office36503.png)
 
-Once the license is assigned, check that the Skype for Business account works as intended by logging on to a Skype for Business client with this account.
+Once the license has been assigned, check that the Skype for Business account works as intended by logging on to a Skype for Business client with this account.
 
-#### Update the password expiry policy
+#### Update the Password Expiry Policy
 
-In Office 365, the default password expiry policy is 90 days. For KICKLE however, it is imperative to change this to “Password Never Expires”. Follow the following procedure step by step.</>
+In Office 365, the default password expiry policy is 90 days. For Kickle, however it is imperative to change this to “Password Never Expires”. Follow the following procedure step by step.</>
 **Install Microsoft Online Services Sign-In Assistant for IT Professionals RTW.**
 
 ![Office365] (/img/miconlineserv.png)
@@ -178,7 +177,7 @@ For more information, please refer to the following TechNet article:
 
 ***<https://technet.microsoft.com/fr-fr/library/bb978526.aspx>.***
 
-Run the following cmdlet :
+Run the following cmdlet:
 
 ``` powershell
 Import-Module LyncOnlineConnector
@@ -198,7 +197,7 @@ $cssess=New-CsOnlineSession -Credential $cred
 Import-PSSession $cssess -AllowClobber
 ```
 
-#### Password expiration Policy
+#### Password Expiration Policy
 
 Run the following cmdlet :
 
@@ -207,7 +206,7 @@ Connect-MsolService -Credential $cred
 ```
 
 ``` powershell
-Set-MsolUser -UserPrincipalName KICKLE01@mycompany.com -PasswordNeverExpires $true
+Set-MsolUser -UserPrincipalName Kickle01@mycompany.com -PasswordNeverExpires $true
 ```
 
 Refer to ***<http://technet.microsoft.com/en-us/library/dn362831.aspx>*** for more information.
@@ -215,8 +214,8 @@ Refer to ***<http://technet.microsoft.com/en-us/library/dn362831.aspx>*** for mo
 #### Office 365 Consent
 
 This paragraph applies to **Exchange Online and Skype for Business Online (Office 365) infrastructures only.**
-KICKLE use office 365 APIs. By default, 3rd applications are not authorized to authenticate to your office 365 tenant. The following procedure authorize KICKLE to connect to your office 365 APIs.
-Go to <https://auth-online.KICKLE.com/> and fill your office 365 domain name.
+Kickle uses Office 365 APIs. By default third party applications are not authorized to authenticate your office 365 tenant. The following procedure authorizes Kickle to connect to your office 365 APIs.
+Go to <https://auth-online.Kickle.com/> and enter your office 365 domain name.
 
 ![Office 365 Consent1] (/img/consent01.png)
 
@@ -224,7 +223,7 @@ Authenticate with an office 365 administrator account:
 
 ![Office 365 Consent2] (/img/consent02.png)
 
-Click on **accept**:
+Click on **Accept**.
 
 ![Office 365 Consent3] (/img/consent03.png)
 

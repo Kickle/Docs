@@ -8,9 +8,9 @@
     Version : 1.0
 -->
 
-####Manage attachments
+####Manage Attachments
 
-Kickle is able to manage attachments. If an user attach a file to invitation, it will be include automatically in the workspace.
+Kickle is able to manage attachments. If a user attaches a file to an invitation, it will automatically be included in the workspace.
 By default, room mailbox deletes attachment. You can use this cmdlet to avoid suppression.
 
 ``` powershell

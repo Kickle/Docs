@@ -8,15 +8,15 @@
     Version : 1.0
 -->
 
-Regarding your IT policies, you want to join Kickle to Active Directory. By Default, Kickle is in workgroup and configured with two accounts :
+Regarding your IT policies, you want to join Kickle to the Active Directory. By Default, Kickle is in workgroup and configured with two accounts:
 
-* **Kickle** : which is the account configured for auto login. It's a simple user
-* **Administrator** : Default Local Windows 10 Administrator
+* **Kickle**: which is the account configured for auto login. It's a simple user.
+* **Administrator**: Default Local Windows 10 Administrator.
 
 You can join Kickle either to your local AD or Azure AD.
-We are recommanding to set Kickle to a specifig OU and block inheritance (to avoid desactivation of local admin account for example)
+We recommend setting Kickle to a specific OU and block inheritance (to avoid deactivation of the local admin account, for example).
 
-## Join Kickle to your local AD
+## Join Kickle Unit to Your Local AD
 
 1. Start Kickle in [admin mode](admin-mode.md)
 2. Start an explorer by typing **explorer** in the powershell window
@@ -26,13 +26,13 @@ We are recommanding to set Kickle to a specifig OU and block inheritance (to avo
 ![Access Work or School](../img/access-work.png)
 4. Click on **Connect** and **Join this device to local Active Directory**
 ![Join local AD](../img/join-local-ad.png)
-5. Set you AD domain
+5. Set your AD domain
 ![AD Domain](../img/local-ad-domain.png)
-6. Fill the form with your administrator credentials
+6. Fill in the form with your administrator credentials
 ![Admin Credentials](../img/local-admin-credentials.png)
 7. If your account is correct, Windows asks to specify the local group. Select **Administrator**
 ![Local Right](../img/local-right-selector.png)
-8. Restart your computer. Kickle is rebooting and starts automatically to Kicke App
+8. Restart your computer. Kickle reboots and automatically launches the Kickle App.
 9. If you switch to admin mode, you can now log in with your domain account.
 ![Local login](../img/login-local-domain.png)
 

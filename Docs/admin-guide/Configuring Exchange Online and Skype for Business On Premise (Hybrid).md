@@ -7,17 +7,16 @@
 	Public : Yes
     Version : 1.0
 -->
-!!! important "Important"
-    This paragraph applies to Exchange Online and Skype for Business On Premise infrastructures only. If you are using another configuration, please refer to section **Configuring Exchange On-Premise** or section **Configuring Exchange Online and Skype for Business Online (Office 365) accounts**.
+### Creating Your User Account
 
-!!! note "Note"
-    You must have sufficient rights to access your Office 365 using Exchange Remote PowerShell.
+!!! Info "Info"
 
-#### Creating Your User Account
+    - This paragraph applies to Exchange Online and Skype for Business On Premise infrastructures only. If you are using another configuration, please refer to the section [Configuring Exchange On-Premises](Configuring Exchange On-Premise and Skype for Business On-Premise Accounts.md) or the section [Configuring Exchange Online and Skype for Business Online (Office 365) accounts](Configuring Exchange Online and Skype for Business Online (Office 365) Accounts.md).
+    - You must have sufficient rights to access your Office 365 account using Exchange Remote PowerShell.
 
 If you are using the directory synchronization feature, create your account on your local Active Directory and synchronize it with the cloud.
 Sync Operation can be automatic (according to your configuration). You can force it by using the appropriate tools.
-One successfully synchronized with the cloud, enable the Exchange modality on this account.
+Once successfully synchronized with the cloud, enable the Exchange modality on this account.
 
 ### Creating and Configuring a Room Mailbox Account for Exchange Online (Office 365)
 
@@ -51,7 +50,7 @@ Run the cmdlet below to import your session so you can run Exchange commands in 
 Import-PSSession $Session
 ```
 
-#### Using an existing Room Mailbox account in Exchange Online (Office 365)
+#### Using an existing Room Mailbox Account in Exchange Online (Office 365)
 
 If you are already using a Room Mailbox account for the KICKLE room, you can follow the steps below. However, we recommend that you delete and then recreate the account. To use an existing Exchange account (KICKLE01 in this example), execute the following cmdlet:
 
@@ -98,7 +97,7 @@ $Temp.MailTipTranslations += "ES: Esta sala de reuniones tiene una solución KIC
 Set-Mailbox -Identity $rm -MailTipTranslations $Temp.MailTipTranslations
 ```
 
-#### Configuring the Message Received When a KICKLE Room is Booked
+#### Configuring the Message Received When a Kickle Room is Booked
 
 You can configure the message that the meeting organizer will receive when booking the room by running the following cmdlet:
 
@@ -113,7 +112,7 @@ If you wish to enable the use of KICKLE in "Planned Meeting" mode by somebody wh
 Set-CalendarProcessing $rm –ProcessExternalMeetingMessages $true
 ```
 
-Companies who want to use your KICKLE must add your domain as a RemoteDomain. The following commands must be executed on the Office 365 infrastructure of your partner.
+Companies who want to use your KICKLE must add your domain as a RemoteDomain. The following commands must be executed on your external collaborator's Office 365 infrastructure.
 
 ``` powershell
 New-RemoteDomain –DomainName mycompany.com –Name mycompany.com
@@ -123,20 +122,20 @@ New-RemoteDomain –DomainName mycompany.com –Name mycompany.com
 Set-RemoteDomain mycompany.com –TNEFEnabled $true
 ```
 
-#### Sychronisation
+#### Synchronization
 
-Once the Exchange modality has been added to the user, wait or force the synchronization between your local active directory and the cloud.You can check the synchronization by looking the email properties in the DSA Console.
+Once the Exchange modality has been added to the user, wait or force the synchronization between your local active directory and the cloud.You can check the synchronization by looking at the email properties in the DSA Console.
 
-#### Configuring Skype for Business On-Premise Accounts
+#### Configuring Skype for Business On-Premises Accounts
 
-Once you have configured the Room Mailbox account, use Skype for Business Server Management Shell to enable the Skype for Business account using the cmdlet below.
+Once you have configured the Room Mailbox account, use Skype for Business Server Management Shell to enable the Skype for Business account to use the cmdlet below.
 
 ``` powershell
     Enable-CsMeetingRoom -SipAddress "sip:KICKLE01@mycompany.com" -domaincontroller DC-ND-001.company.com -RegistrarPool SKYPE FOR BUSINESSPool15.company.com -Identity LRS01
 ```
 
 !!! note
-    Skype for Business Server Management Shell is automatically installed on each Standard Edition Server or frontend Enterprise Edition Skype for Business Server. For more information, please refer to:           ***<https://technet.microsoft.com/fr-fr/library/gg398474.aspx>.***
+    Skype for Business Server Management Shell is automatically installed on each Standard Edition Server or frontend Enterprise Edition Skype for Business Server. For more information, please refer to: ***<https://technet.microsoft.com/fr-fr/library/gg398474.aspx>.***
 
 
 

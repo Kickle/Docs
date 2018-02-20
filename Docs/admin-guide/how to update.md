@@ -7,30 +7,31 @@
 	Public : Yes
     Version : 1.0
 -->
-### UPDATING KICKLE
+### Updating Kickle
 
-#### Updating from remote computer
+#### Updating From a Remote Computer
 
-From the remote computer on the same sub-network  or through the Kickle embedded browser,browse to your Kickle website (http://ip-address-of-kickle).
+From the remote computer on the same sub-network or through the Kickle embedded browser, browse your Kickle unit website (http://ip-address-of-kickle).
 
-!!! note
-    Press CTRL+TAB and **help menu** will appears on the screen. Select **Information** to check kickle Ip address.
+!!! Tip "Tip"
+    Select **Information** from the **Help Menu** by pressing the **CTRL + TAB** keys on the keyboard (virtual or real) to check Kickle's ip address.
 
 Reconnect using the administrator account.
 
 Ask Kickle to get the admin account and the password <http://support.kickle.com>.
 
-You can change the password.
-![Setting Up] (/img/update1.png)
+![Setting Up] (/img/admin-home.png)
 
-#### Updating from KICKLE box
+#### Updating From The Kickle Unit
 
-- From the Kickle, Click on browser icon ![Browser] (/img/icon-browser.png)
-- Type https://localhost/ on the browser
-- Authentication using kickle user
+- From the Kickle unit, click on browser icon ![Browser] (/img/icon-browser.png).
+- Type https://localhost/ in the browser.
+- Authentication using a Kickle user.
 - If an update is available, the **update now** button will appear.
 - Click on **update now**.
 - Update will download and install automatically.
-- Reboot may be required
+
+!!! Warning " "
+    A reboot may be required.
 
 ![Setting Up] (/img/update2.png)
