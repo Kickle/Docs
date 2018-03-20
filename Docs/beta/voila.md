@@ -10,19 +10,19 @@
 
 #Voila
 
-Voila is a project that we are working on for a few months now. 
+Voila is a project that we have been working on for a few months now. 
 Our goal is to create a great experience with kickle, locally in the meeting room.
 
-We are really excited to release it! It is part of our beta release.
+We are very excited to be releasing it as part of our beta release!
 
 ##Features
-We will launch some features gradually. Today we limit the version to : 
+We will launch certain features gradually. Today's version will be limited to: 
 
 * Local Sharing
-* Windows Sender
+* Windows 10 Sender
 
 ##Architecture
-The sender is connected directly to the receiver on Kickle. At this time, Kickle should be reachable by the sender on the local network.
+The sender is connected directly to the receiver via Kickle. At this time, Kickle should be reachable by the sender on the local network.
 
 ![Voila](../img/VOILA.png)
 
@@ -35,5 +35,5 @@ The sender is connected directly to the receiver on Kickle. At this time, Kickle
 | Sender (PC)   | Kickle  | TCP (443)  | Commands   |
 | Sender (PC)   | Kickle  | UDP (1024-65535)* | Media |
 
-*Of Course, we are working hard to limit this ports range. It will also be configureable by IT Administrators
+*Of Course, we are working hard to limit this ports range. It will also be configurable by IT Administrators
 
