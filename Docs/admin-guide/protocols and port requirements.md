@@ -80,7 +80,7 @@ Kickle uses several specific ports to communicate with our cloud platform.
 
 !!! Info "Info"
     From version 2.0.17317.02 through the latest releases, we are now using only HTTPS(443)
-    The best option is to configure a wildcard. All URLs are: api.kickle.com, auth.kickle.com, hub.kickle.com, portal.kickle.com
+    The best option is to configure a wildcard. All URLs are: api.kickle.com, auth.kickle.com, hub.kickle.com, portal.kickle.com, kickle-content.azureedge.net, kickle-script.azureedge.net
 
 ### MirrorOP / Wireless
 
