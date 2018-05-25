@@ -8,9 +8,9 @@
     Version : 1.1
 -->
 
-Kickle is always in conference mode. This table describes all the scenarios about codec and bitrate.
+Kickle always uses conference mode. This table describes all the scenarios around codec and bitrate.
 You can modify the bitrate for audio, video and sharing by using the cmdlet "[Set-csconferencingpolicy](https://docs.microsoft.com/en-us/powershell/module/skype/set-csconferencingpolicy?view=skype-ps)"
-All figures are not fixed and depend on media's activities
+None of the figures are  fixed and depend on the media activity
 
 
 ##Audio
@@ -23,14 +23,14 @@ All figures are not fixed and depend on media's activities
 | Siren  | 16.0  | 63.6   |
 
 ##Video
-Video is linked to : the number of videos and the size (full screen or preview).
+Video is linked to : the number of video's participants and the size (full screen or preview).
 
-Skype for business is using H264 SVC since Lync 2013.
-The maximum for all the video streams in conference is 8015 kbps.
-Please refer to the link at the bottom of this page to get more details.
+Skype for business has been using H264 SVC since Lync 2013.
+The maximum for all video streams in conference is 8015 kbps.
+Please refer to the link at the bottom of this page for more details.
 
 ##Sharing
-Kickle doesn't support VBSS so far (https://docs.microsoft.com/en-us/skypeforbusiness/manage/video-based-screen-sharing)
+Kickle doesn't support VBSS as of yet (https://docs.microsoft.com/en-us/skypeforbusiness/manage/video-based-screen-sharing)
 Bandwidth for sharing depends on screen resolution that is shared.
 
 | 1080p Content  | RDP Average   | RDP Peak  |
