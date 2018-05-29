@@ -12,3 +12,5 @@
 ### If You Use a Proxy
 
 We strongly recommend that you bypass your proxy with a specific rule. Proxy configuration is very complex within a Skype for Business infrastructure.
+
+https://docs.microsoft.com/en-us/SkypeForBusiness/optimizing-your-network/proxy-servers-for-skype-for-business-online
