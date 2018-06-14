@@ -21,6 +21,7 @@ Follow standard instructions to install your applications, just be sure to insta
 
 ### Particular cases
 We have listed below some instructions to improve the experience with certain softwares that we have tested:
+
 * __Office preferences__: for an easy open and save file experience, we recommend deactivating the "backstage mode" in the save options.
 <!-- TODO force kickle explorer handling in all cases -->
 
