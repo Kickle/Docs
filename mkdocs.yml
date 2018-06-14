@@ -68,6 +68,7 @@ pages:
     - Wifi Hotspot : features/hotspot.md
   - Beta Features :
     - Voila : beta/voila.md
+    - Standalone Install : beta/installer.md
   
 
  
