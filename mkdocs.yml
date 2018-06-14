@@ -66,6 +66,7 @@ pages:
     - Manage Kickle with Microsoft Intune : manage/intune.md
   - Additional Features:
     - Wifi Hotspot : features/hotspot.md
+    - Additional Applications : features/application.md
   - Beta Features :
     - Voila : beta/voila.md
     - Standalone Install : beta/installer.md
