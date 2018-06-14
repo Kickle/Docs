@@ -60,9 +60,9 @@ All components are downloaded and installed automatically after final reboot.
 |Steps   |   |
 |---|---|
 |After Windows installation is terminated, start Kickle's MSI   |   |
-|Click on next to validate the welcome menu   |   |
-|Requirements checks are done. You can continue, only if the necessary requirements are available.    |   |
-|Validate the license and click on Install  |   |
+|Click on next to validate the welcome menu   |![Step 1](/img/install-1.png)   |
+|Requirements checks are done. You can continue, only if the necessary requirements are available.    | ![Step 2](/img/install-2.png)   |
+|Validate the license and click on Install  |![Step 3](/img/install-3.png)   |
 |The first part will copy files and activate Windows Features  |   |
 |A reboot is asked to terminate windows features activation |   |
 |After the reboot, log on the session that you used before. Installation will continue automatically |   |
