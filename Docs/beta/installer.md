@@ -63,11 +63,11 @@ All components are downloaded and installed automatically after final reboot.
 |Click on next to validate the welcome menu   |![Step 1](/img/install-1.png)   |
 |Requirements checks are done. You can continue, only if the necessary requirements are available.    | ![Step 2](/img/install-2.png)   |
 |Validate the license and click on Install  |![Step 3](/img/install-3.png)   |
-|The first part will copy files and activate Windows Features  |   |
-|A reboot is asked to terminate windows features activation |   |
+|The first part will copy files and activate Windows Features  |![Step 4](/img/install-4.png)    |
+|A reboot is asked to terminate windows features activation |![Step 5](/img/install-5.png)     |
 |After the reboot, log on the session that you used before. Installation will continue automatically |   |
-|Final steps are executed. You can click on finish. |   |
-|A popup asks you to reboot to terminate Kickle's installation. The system will restart automatically in kiosk mode and on the right user session |   |
+|Final steps are executed. You can click on finish. |![Step 6](/img/install-6.png)     |
+|A popup asks you to reboot to terminate Kickle's installation. The system will restart automatically in kiosk mode and on the right user session |![Step 7](/img/install-7.png)    |
 |Just after reboot, session starts on cmd windows. After a quick delay, an automatic update is starting to download the latest version |   |
 
 Today, we are not supporting to change the default installation location.
