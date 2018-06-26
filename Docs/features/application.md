@@ -31,6 +31,9 @@ We have listed below some instructions to improve the experience with certain so
 * __Powerpoint__: instead of using the fullscreen slideshow view, we encourage users to try the "reading view". In this mode, the Powerpoint presentation will take place through Kickle as a regular application, allowing for annotation and a view of remote collaborators. 
 ![Reading-view](../img/app_readingview.png)
 
+* __Remote Desktop Protocol__: the fullscreen mode of RDP overlaps the Kickle interface, to avoid this behaviour, click on `Restore` button once. This way RDP will be displayed in windowed mode. Also be sure to select `Smart sizing` option to adapt the content to the size of application.
+![Reading-view](../img/app_rdp.png)
+
 * __Polycom RealDesktop Presence__: by default when the application is closed, it is actually minimized in the system tray. In order for Kickle to behave well, this feature needs to be deactivated following installation of the application. Then, edit the following registry key: `HKCU\SOFTWARE\Polycom\RealPresence Desktop` and set the value `ExitOnClick` to `TRUE`.
 <!-- `HKLM\SOFTWARE\Wow6432Node\Polycom\RealPresence\Desktop` S-1-5-21-XXXX-500 -->
 
