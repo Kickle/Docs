@@ -15,9 +15,12 @@ Kickle is able to include your applications in the collaborative ecosystem. Afte
 ![Wrapped](../img/app_word.png)
 
 ## Installation
-To install additional applications, switch into [admin mode](http://docs.kickle.com/manage/admin-mode/). Here, you will have permissions to run installer and configure the system.
+To install additional applications, open a Powershell command from the Kickle session to stay in the `Kickle` user's context. Here, you will have permissions to run installer and configure the system.
 
-Follow standard instructions to install your applications, just be sure to install it for all users. Once the installation is finished, we recommend running new applications a first time to ensure that all components and licences are registered and to complete the first-run configurations: such as file types associations or the saving format for Office.
+Press `Ctrl + F2` to open an administrator command and type `explorer` to open a Windows file explorer. Browse USB drive or network to reach your application installer. Follow standard instructions to install your applications. Once the installation is finished, we recommend running new applications a first time to ensure that all components and licences are registered and to complete the first-run configurations: such as file types associations or the saving format for Office.
+
+### File types associations
+During the installation of applications, the corresponding extension files are associated with the new application. You can also customize associations with the regular Windows `OpenWith` interface, don't forget to tick the checkbox `Always use this app to open .XXX files` to save your changes.
 
 ### Particular cases
 We have listed below some instructions to improve the experience with certain softwares that we have tested:
@@ -25,14 +28,14 @@ We have listed below some instructions to improve the experience with certain so
 * __Office preferences__: for an easy open and save file experience, we recommend deactivating the "backstage mode" in the save options.
 <!-- TODO force kickle explorer handling in all cases -->
 
-* __Powerpoint__: Instead of using the fullscreen slideshow view, we encourage users to try the "reading view". In this mode, the Powerpoint presentation will take place through Kickle as a regular application, allowing for annotation and a view of remote collaborators. 
+* __Powerpoint__: instead of using the fullscreen slideshow view, we encourage users to try the "reading view". In this mode, the Powerpoint presentation will take place through Kickle as a regular application, allowing for annotation and a view of remote collaborators. 
 ![Reading-view](../img/app_readingview.png)
 
 * __Polycom RealDesktop Presence__: by default when the application is closed, it is actually minimized in the system tray. In order for Kickle to behave well, this feature needs to be deactivated following installation of the application. Then, edit the following registry key: `HKCU\SOFTWARE\Polycom\RealPresence Desktop` and set the value `ExitOnClick` to `TRUE`.
 <!-- `HKLM\SOFTWARE\Wow6432Node\Polycom\RealPresence\Desktop` S-1-5-21-XXXX-500 -->
 
 ## Shortcuts
-During the installation of applications, the corresponding extension files are associated with the new application. Kickle's files explorer will automatically detect an association between them and the associated files will appear in the file hierarchy.
+Kickle's files explorer automatically detects file types associations, files appear in the file hierarchy only if an application is associated to the corresponding type.
 
 ![Voila](../img/app_shortcuts.png)
 
