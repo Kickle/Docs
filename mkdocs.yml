@@ -6,7 +6,7 @@ site_author: 'Kickle'
 site_url: 'https://docs.kickle.com'
 
 # Copyright
-copyright: 'Copyright &copy; 2017 - 2018 Kickle'
+copyright: 'Copyright &copy; 2018 Kickle'
 
 # Documentation and theme
 theme: 'material'
