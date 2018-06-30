@@ -19,7 +19,7 @@ We recommend setting Kickle to a specific OU and block inheritance (to avoid dea
 ## Join Kickle Unit to Your Local AD
 
 1. Start Kickle in [admin mode](admin-mode.md)
-2. Start an explorer by typing **explorer** in the powershell window
+2. Start an explorer by typing **explorer** in the powershell window.
 3. Click on the Windows Flag and on System Gear to launch Settings Apps
 ![Settings App](../img/settings.png)
 3. Click on **Accounts** and on **Access work or school**
