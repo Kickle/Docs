@@ -4,6 +4,7 @@ site_name: 'KICKLE'
 site_description: 'KICKLE Admin Configuration docs'
 site_author: 'Kickle'
 site_url: 'https://docs.kickle.com'
+docs_dir: Docs
 
 # Copyright
 copyright: 'Copyright &copy; 2018 Kickle'
