@@ -67,7 +67,7 @@ All components are automatically downloaded and installed following the final re
 |After rebooting, log into the same session you used previously. Installation will continue automatically. |   |
 |The final steps are executed. You can click on “Finish”. |![Step 6](/img/install-6.png)     |
 |You will be prompted by a popup message to reboot again in order to complete the installation of Kickle. The system will restart automatically in kiosk mode and logged into the correct user session. |![Step 7](/img/install-7.png)    |
-|Right after the reboot, the session will open via a cmd windows prompt. After a brief delay, an automatic update will begin downloading the latest version.|   |
+|Right after the reboot, the session will open and check updates. After a brief delay, an automatic update will begin downloading the latest version.| ![Step 8](/img/updates.png)  |
 
 As of today, we are not supporting a change to the default installation location.
 
