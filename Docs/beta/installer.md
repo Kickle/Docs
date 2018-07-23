@@ -76,5 +76,5 @@ If you encounter any error during installation, the installer will roll back all
 If necessary, you can also start the installation with logs by using the following command:
 
 ``` powershell
-msiexec Kickle.deploy.msi /l*v log.txt
+msiexec /i Kickle.deploy.msi /l*v log.txt
 ```
