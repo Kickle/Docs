@@ -19,6 +19,7 @@ To install Kickle, you must check off the following requirements:
 * **RAM** : At least 4 GB (8GB recommended)
 * **Disk** : At least 5GB of available space
 * Internet Connexion
+* 1920x1080 pixels maximal screen resolution (recommended)
 
 All of these requirements are verified during installation.
 
