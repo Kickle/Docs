@@ -14,7 +14,21 @@ Regarding your IT policies, you want to join Kickle to the Active Directory. By 
 * **Administrator**: Default Local Windows 10 Administrator.
 
 You can join Kickle either to your local AD or Azure AD.
-We recommend setting Kickle to a specific OU and block inheritance (to avoid deactivation of the local admin account, for example).
+We recommend setting Kickle to a specific OU and block inheritance (to avoid deactivation of the local admin account, or configure specific settings for local users).
+
+##Good to know about GPO
+Kickle is configured with a local GPO to configure some settings :
+
+* Computer :
+    * Set powershell script execution mode
+    * Power settings to avoid hibernation and sleep mode
+    * OneDrive and Cortana are disabled by default
+    * Store is disabled
+    * Windows Update : Updates are configured by local GPO
+    * Explorer : Local Disk are hidden and default shares are disabled
+
+Auto login is not configured by GPO. The keys are added directly in the registry.
+These settings are not mandatory but are recommended to have a good experience with Kickle.
 
 ## Join Kickle Unit to Your Local AD
 
