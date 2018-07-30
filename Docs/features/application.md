@@ -28,7 +28,7 @@ We have listed below some instructions to improve the experience with certain so
 * __Office preferences__: for an easy open and save file experience, we recommend deactivating the "backstage mode" in the save options.
 <!-- TODO force kickle explorer handling in all cases -->
 
-* __Powerpoint__: instead of using the fullscreen slideshow view, we encourage users to try the "reading view". In this mode, the Powerpoint presentation will take place through Kickle as a regular application, allowing for annotation and a view of remote collaborators. 
+* __Powerpoint__: instead of using the fullscreen slideshow view, we encourage users to try the "reading view". In this mode, the Powerpoint presentation will take place through Kickle as a regular application, allowing for annotation and a view of remote collaborators.
 ![Reading-view](../img/app_readingview.png)
 
 * __Remote Desktop Protocol__: the fullscreen mode of RDP overlaps the Kickle interface, to avoid this behaviour, click on `Restore` button once. This way RDP will be displayed in windowed mode. Also be sure to select `Smart sizing` option to adapt the content to the size of application.
@@ -42,7 +42,7 @@ Kickle's files explorer automatically detects file types associations, files app
 
 ![Voila](../img/app_shortcuts.png)
 
-Furthermore, it could be useful to add a shortcut to launch an application. To create a shortcut, you must create a folder named `Applications` at the path `C:\Users\Kickle\AppData\Local\Kickle\` and put the desired executable shortcuts inside it. For example you can drag-and-drop the `WinWord.exe` executable while holding the `Alt` modifier key to easily create a shortcut for the Word application. Following that, you can customize the properties such as the displayed name or the icon. You can also specified a document as the target of the link, but never include a document directly.
+Furthermore, it could be useful to add a shortcut to launch an application. To create a shortcut, you must create a folder named `Applications` at the path `C:\Users\Kickle\AppData\Local\Kickle\` and put the desired executable shortcuts inside it. For example, you can drag-and-drop the `WinWord.exe` executable while holding the `Alt` modifier key to easily create a shortcut for the Word application. Following that, you can customize the properties such as the displayed name or the icon. You can also specify a document as the target of the link, but never include a document directly.
 
 ![Shortcut-creation](../img/app_shortcuts_creation.png)
 
