@@ -8,27 +8,27 @@
     Version : 1.0
 -->
 
-Regarding your IT policies, you want to join Kickle to the Active Directory. By Default, Kickle is in workgroup and configured with two accounts:
+With respect to your IT policies, you wish to join Kickle to the Active Directory. By default, Kickle can be found in Workgroup and is configured with two accounts:
 
 * **Kickle**: which is the account configured for auto login. It's a simple user.
-* **Administrator**: Default Local Windows 10 Administrator.
+* **Administrator**: the default local Windows 10 Administrator.
 
 You can join Kickle either to your local AD or Azure AD.
-We recommend setting Kickle to a specific OU and block inheritance (to avoid deactivation of the local admin account, or configure specific settings for local users).
+We recommend setting Kickle to a specific OU and blocking inheritance (to avoid deactivation of the local admin account, or configure specific settings for local users).
 
-##Good to know about GPO
-Kickle is configured with a local GPO to configure some settings :
+##Useful info for GPO
+Kickle is set up with a local GPO to configure certain settings:
 
 * Computer :
-    * Set powershell script execution mode
+    * Set powershell script "execution mode"
     * Power settings to avoid hibernation and sleep mode
     * OneDrive and Cortana are disabled by default
     * Store is disabled
     * Windows Update : Updates are configured by local GPO
     * Explorer : Local Disk are hidden and default shares are disabled
 
-Auto login is not configured by GPO. The keys are added directly in the registry.
-These settings are not mandatory but are recommended to have a good experience with Kickle.
+Auto login is not configured by GPO. The keys are added directly to the registry.
+The above settings are not mandatory but are recommended for a good experience using Kickle.
 
 ## Join Kickle Unit to Your Local AD
 
