@@ -228,8 +228,3 @@ Click on **Accept**.
 ![Office 365 Consent3] (/img/consent03.png)
 
 ![Office 365 Consent4] (/img/consent04.png)
-
-:tada::tada::tada:
-
-
-
