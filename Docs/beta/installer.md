@@ -14,7 +14,7 @@ This page describes how to install Kickle on a newly windows 10 install.
 
 To install Kickle, you must check off the following requirements:
 
-* **OS** : At least Windows 10, Version 1703 (1709 recommended), either Enterprise or Edu
+* **OS** : At least Windows 10, Version 1703 (1709 recommended), either Enterprise or Edu. Pro edition is not supported. 
 * **Processor** : Intel i5 (i7 recommended)
 * **RAM** : At least 4 GB (8GB recommended)
 * **Disk** : At least 5GB of available space
