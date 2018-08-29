@@ -22,6 +22,7 @@ To install Kickle, you must check off the following requirements:
 * 1920x1080 pixels maximal screen resolution (recommended)
 
 All of these requirements are verified during installation.
+Domain : Do not join your Windows 10 to a domain before installing Kickle. You can join to the domain after installing Kickle.
 
 ##OS Configuration
 During installation, the installer will change the Windows configuration to offer a "kiosk" experience.
