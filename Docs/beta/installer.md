@@ -18,10 +18,15 @@ To install Kickle, you must check off the following requirements:
 * **Processor** : Intel i5 (i7 recommended)
 * **RAM** : At least 4 GB (8GB recommended)
 * **Disk** : At least 5GB of available space
-* Internet Connexion
+* **Network**: Do not use a WiFi connection during Kickle installation. If you do, installation will stop. You can use WiFi at a later time, though it is not recommended.  The computer should be connected to Internet.
 * 1920x1080 pixels maximal screen resolution (recommended)
 
 All of these requirements are verified during installation.
+
+We've tested Kickle on the following hardware pieces:
+
+* INTEL NUC 7 mini-pc series, 8GB DDR minimum, SSD drive, Intel Core i7 minimum. 
+* DELL optiplex 7050 micro form factor series, 8GB DDR minimum, SSD drive, Intel Core i7 minimum. 
 
 **Domain** : Do not join your Windows 10 to a domain before installing Kickle. You can join to the domain after installing Kickle.
 
@@ -52,8 +57,6 @@ All of these steps are rolled back when you uninstall kickle
 
 You may start a clean install of Windows. The only point to keep in mind, which is of particular importance, concerns the default user: a “Kickle” user is created during installation, so be sure not to create another user with this same username in order to avoid confusion.
 
-You may add Kickle to your domain. Just be sure that your domain’s GPOs are not overriding the above configuration.
-
 ##Kickle Installation
 
 The MSI guides you through each step. Two reboots are necessary during this process. 
@@ -75,9 +78,17 @@ All components are automatically downloaded and installed following the final re
 As of today, we are not supporting a change to the default installation location.
 
 ##Troubleshooting
+### Problem during installation
 If you encounter any error during installation, the installer will roll back all modifications. 
 If necessary, you can also start the installation with logs by using the following command:
 
 ``` powershell
 msiexec /i Kickle.deploy.msi /l*v log.txt
+```
+
+### Kickle always on "Checking Updates"
+You can connect to Admin session by clicking on the kickle logo. A new cmd session will start and you can enter the command below to log out.
+
+``` powershell
+shutdown -l
 ```
