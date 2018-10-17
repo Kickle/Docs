@@ -11,7 +11,7 @@
 
 At any time, you can display the **help menu** by pressing the **ctrl + tab** keys on the keyboard (virtual or real).
 
-![Kickle Help Menu] (/img/kickle-helpmenu.png)
+![Kickle Help Menu](../img/kickle-helpmenu.png)
 
 From the **help menu**, you can:
 
@@ -38,7 +38,7 @@ Microsoft Quick Assist is a Windows 10 app that enables Kickle users to share th
 
 Start Quick Assist from the “help menu” by pressing the **ctrl + tab** keys on the keyboard (virtual or real). Then click on **Remote Assistance**.
 
-![Remote Assistance] (/img/remote1.png)
+![Remote Assistance](../img/remote1.png)
 
 #### How to Use Quick Assist From a Remote Computer
 
@@ -47,7 +47,7 @@ Start Quick Assist from the “help menu” by pressing the **ctrl + tab** keys 
 
 On your Windows 10 computer, select the **Start**  ![Windows Icon] (/img/icon-windows.png) button > **Windows Accessories** > **Quick Assist**, or select the search box on the taskbar and type Quick Assist. Then select **Quick Assist** in the list of results. Finally, select **Give Assistance**.
 
-![Remote Assistance] (/img/remote2.png)
+![Remote Assistance](../img/remote2.png)
 
 !!! Note ""
     Ask the Kickle user to enter the security code.
