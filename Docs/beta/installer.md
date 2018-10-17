@@ -23,10 +23,7 @@ To install Kickle, you must check off the following requirements:
 
 All of these requirements are verified during installation.
 
-We've tested Kickle on the following hardware pieces:
-
-* INTEL NUC 7 mini-pc series, 8GB DDR minimum, SSD drive, Intel Core i7 minimum. 
-* DELL optiplex 7050 micro form factor series, 8GB DDR minimum, SSD drive, Intel Core i7 minimum. 
+Here is the list of supported hardware [http://support.kickleforskype.com/support/solutions/articles/8000070699-supported-hardware](http://support.kickleforskype.com/support/solutions/articles/8000070699-supported-hardware) 
 
 **Domain** : Do not join your Windows 10 to a domain before installing Kickle. You can join to the domain after installing Kickle.
 
