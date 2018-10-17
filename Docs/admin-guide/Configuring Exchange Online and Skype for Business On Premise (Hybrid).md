@@ -24,9 +24,9 @@ Once successfully synchronized with the cloud, enable the Exchange modality on t
 
 The following commands are PowerShell commands. To launch PowerShell, simply search for PowerShell in the Search field in Windows 7 or Windows 8.Start PowerShell with the option “Run as an administrator”.
 
-![power-shell1] (/img/power-shell1.png)
+![power-shell1](../img/power-shell1.png)
 
-![power-shell2] (/img/power-shell2.png)
+![power-shell2](../img/power-shell2.png)
 
 For more information, please refer to the following TechNet article: <https://technet.microsoft.com/fr-fr/library/bb978526.aspx>.
 
@@ -78,7 +78,7 @@ Set-CalendarProcessing -Identity $rm -AutomateProcessing AutoAccept -AddOrganize
 
 The MailTip reminds the organizer that the room is equipped with a KICKLE videoconferencing system. The user must click on the “Skype for Business Meeting” button if he or she wishes to use KICKLE.
 
-![mail-tip] (/img/mail-tips.png)
+![mail-tip](../img/mail-tips.png)
 
 !!! Tip "Configuring mailtip :"
     Set-Mailbox -Identity $rm -MailTip "This room is equipped with a KICKLE videoconferencing system. Click on the Skype for Business Meeting button if you wish to use KICKLE."

@@ -18,8 +18,8 @@
 
 The following commands are PowerShell commands. To launch PowerShell, simply search for PowerShell in the Search field in Windows 7 or Windows 8.Start PowerShell with the option Run as an administrator.
 
-![Power-Shell] (/img/power-shell1.png)
-![Power-Shell] (/img/power-shell2.png)
+![Power-Shell](/img/power-shell1.png)
+![Power-Shell](/img/power-shell2.png)
 
 For more information, please refer to the following TechNet article:
 
@@ -89,7 +89,7 @@ Set-CalendarProcessing -Identity $rm -AutomateProcessing AutoAccept -AddOrganize
 
 #### Configuring MailTip
 
-![mail-tip] (/img/mail-tips.png)
+![mail-tip](/img/mail-tips.png)
 
 !!! Tip "Configuring MailTip:"
     Set-Mailbox -Identity $rm -MailTip "This room is equipped with a Kickle videoconferencing system. Click on the Skype for Business Meeting button if you wish to use Kickle."
@@ -117,7 +117,7 @@ You can configure the message that the meeting organizer will receive when booki
 
 The message received by the organizer will be as follows:
 
-![MeetingAccepted] (/img/MeetingAccepted.png)
+![MeetingAccepted](/img/MeetingAccepted.png)
 
 #### Allowing a Person Outside the Company to Schedule a Meeting
 
@@ -145,12 +145,12 @@ Once the Room Mailbox account for Exchange Online is created, it must be associa
 
 Log on to the Office 365 administration portal at <https://portal.office.com> and choose the “administrator” portal.
 
-![Office365] (/img/Office36501.png)
+![Office365](/img/Office36501.png)
 
 Then, assign the corresponding license (P2, P3 or E1, E3, E4 license)
 
-![Office365] (/img/Office36502.png)
-![Office365] (/img/Office36503.png)
+![Office365](../img/Office36502.png)
+![Office365](../img/Office36503.png)
 
 Once the license has been assigned, check that the Skype for Business account works as intended by logging on to a Skype for Business client with this account.
 
@@ -159,19 +159,19 @@ Once the license has been assigned, check that the Skype for Business account wo
 In Office 365, the default password expiry policy is 90 days. For Kickle, however it is imperative to change this to “Password Never Expires”. Follow the following procedure step by step.</>
 **Install Microsoft Online Services Sign-In Assistant for IT Professionals RTW.**
 
-![Office365] (/img/miconlineserv.png)
+![Office365](../img/miconlineserv.png)
 
 Finally, install **Azure Active Directory Module for Windows PowerShell (64-bit version)**
 
-![Microsoft Azure] (/img/azure.png)
+![Microsoft Azure](../img/azure.png)
 
 #### Launch PowerShell
 
 Start PowerShell with the option **Run as an administrator**.
 
-![power-shell1] (/img/power-shell1.png)
+![power-shell1](../img/power-shell1.png)
 
-![power-shell2] (/img/power-shell2.png)
+![power-shell2](../img/power-shell2.png)
 
 For more information, please refer to the following TechNet article:
 
@@ -217,14 +217,14 @@ This paragraph applies to **Exchange Online and Skype for Business Online (Offic
 Kickle uses Office 365 APIs. By default third party applications are not authorized to authenticate your office 365 tenant. The following procedure authorizes Kickle to connect to your office 365 APIs.
 Go to <https://auth-online.Kickle.com/> and enter your office 365 domain name.
 
-![Office 365 Consent1] (/img/consent01.png)
+![Office 365 Consent1](../img/consent01.png)
 
 Authenticate with an office 365 administrator account:
 
-![Office 365 Consent2] (/img/consent02.png)
+![Office 365 Consent2](../img/consent02.png)
 
 Click on **Accept**.
 
-![Office 365 Consent3] (/img/consent03.png)
+![Office 365 Consent3](../img/consent03.png)
 
-![Office 365 Consent4] (/img/consent04.png)
+![Office 365 Consent4](../img/consent04.png)
