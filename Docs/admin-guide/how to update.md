@@ -20,7 +20,7 @@ Reconnect using the administrator account.
 
 Ask Kickle to get the admin account and the password <http://support.kickle.com>.
 
-![Setting Up] (/img/admin-home.png)
+![Setting Up](../img/admin-home.png)
 
 #### Updating From The Kickle Unit
 
@@ -34,4 +34,4 @@ Ask Kickle to get the admin account and the password <http://support.kickle.com>
 !!! Warning " "
     A reboot may be required.
 
-![Setting Up] (/img/update2.png)
+![Setting Up](../img/update2.png)

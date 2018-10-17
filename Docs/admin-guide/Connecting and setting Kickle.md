@@ -23,7 +23,7 @@ Before starting the configuration, make sure Kickle requirements are met.
 
 To start configuration, press the configuration icon.
 
-![first-config] (/img/1stConfig1.png)
+![first-config](../img/1stConfig1.png)
 
 First, you'll need to choose your preferred language setting, keyboard language layout and Kickle's time zone.
 
@@ -33,28 +33,28 @@ First, you'll need to choose your preferred language setting, keyboard language 
 
     - The next button will become bold once you have selected all the information.
 
-![first-config] (/img/1stConfig2.png)
+![first-config](../img/1stConfig2.png)
 
 Second step: select the network configuration and choose a **dynamic** or **static** connection.
 
 !!! Note "Note"
     If you set it as a static connection, be sure that the ip address allows Kickle unit to connect to the internet.
 
-![first-config] (/img/1stConfig3.png)
+![first-config](../img/1stConfig3.png)
 
 Here, if your internet connection requires a proxy, you can enable this feature.
 
 !!! Info "Info"
     We strongly recommend that you bypass your proxy with a specific rule. Proxy configuration is very complex within a Skype for Business infrastructure.
 
-![first-config] (/img/1stConfig4.png)
+![first-config](../img/1stConfig4.png)
 
 Here, you must fill out Skype authentication. Skype's default setting is Office 365, but if you need to configure it with an On-Premises account, be sure to uncheck **SKYPE is Office 365**.
 
 !!! Info "Info"
     Press the **Test** icon to process test connections. If the test fails, we advise you to check the authentication account whether it has been activated or not and we also recommend checking the network connection.
     Once you have an **OK connection**, press the next button to continue.
-![first-config] (/img/1stConfig5.png)
+![first-config](../img/1stConfig5.png)
 
 !!! Info "Info"
     - Office 365 EWS URL address:
@@ -63,7 +63,7 @@ Here, you must fill out Skype authentication. Skype's default setting is Office 
     - How to find EWS URL address on on-premises server:
       Open the Exchange Management Shell on the Exchange server
       Type or copy--> ***Get-WebServicesVirtualDirectory |Select name, *url* | fl*** <--end of copy.
-![first-config] (/img/1stConfig6.png)
+![first-config](../img/1stConfig6.png)
 
 Here, you can select the display scaling that your Kickle screen use and turn screen off features.
 
@@ -73,21 +73,21 @@ Here, you can select the display scaling that your Kickle screen use and turn sc
 
     - The default value of turn screen off features is 0.
 
-![first-config] (/img/1stConfig7.png)
+![first-config](../img/1stConfig7.png)
 
 Here, you can add a local NTP server and enable ICMP requests for your Kickle unit.
 
-![first-config] (/img/1stConfig8.png)
+![first-config](../img/1stConfig8.png)
 
 Here, you can customize email invitation template.
 
-![first-config] (/img/1stConfig9.png)
+![first-config](../img/1stConfig9.png)
 
 **Congratulations!**
 
 To complete the configuration, press the reboot icon to apply the changes.
 
-![first-config] (/img/1stConfig10.png)
+![first-config](../img/1stConfig10.png)
 
 #### Setting Up Kickle
 
@@ -99,7 +99,7 @@ You can change the password at any time (see chapter 10).
 
 You can also browse your Kickle unit website (https://ip-address-of-Kickle) from remote computer on the same sub-network.
 
-![Setting up 1] (/img/admin-home.png)
+![Setting up 1](../img/admin-home.png)
 
 Reconnect using the administrator account. Then, complete the fields in the Web GUI:
 
@@ -108,36 +108,36 @@ Reconnect using the administrator account. Then, complete the fields in the Web 
 - The Exchange login is the associated AD account (if you use Skype for Business Online / Office 365, leave these fields blank).
 - The **Exchange login** is the associated AD account (if you use Skype for Business Online / Office 365, leave these fields blank).
 
-![Setting up 2] (/img/setting-up2.png)
+![Setting up 2](../img/setting-up2.png)
 
 Specify the type of network connection:
 
 dynamic or static IP.
 
-![Setting up 3] (/img/setting-up3.png)
+![Setting up 3](../img/setting-up3.png)
 
 !!! warning " "
     If you choose fixed IP, you must ensure that Kickle remains accessible. Changing the IP address takes effect immediately.
 
 Type the **Exchange webservice** URL.
 
-![Setting up 4] (/img/setting-up4.png) 
+![Setting up 4](../img/setting-up4.png) 
 
 Configure proxy settings, if applicable.
 
-![Setting up 5] (/img/setting-up5.png)
+![Setting up 5](../img/setting-up5.png)
 
 !!! note "Note"
     We strongly recommend that you to bypass your proxy with a specific rule. Proxy configuration is very complex within a Skype for Business infrastructure.
 
 Type the **NTP servers** if needed.
 
-![Setting up 6] (/img/setting-up6.png)
+![Setting up 6](../img/setting-up6.png)
 
 You can change the size of the text, apps, and other items, and even change the Kickle background image.
 
-![Setting up 7] (/img/setting-up7.png)
+![Setting up 7](../img/setting-up7.png)
 
 You will need to **Reboot** the Kickle to apply the new configuration settings.
 
-![Setting up 8] (/img/reboot.png)
+![Setting up 8](../img/reboot.png)
