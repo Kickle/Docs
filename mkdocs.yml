@@ -24,11 +24,6 @@ extra:
   logo: 'icone.png'
 # Extensions 
 markdown_extensions:
-  - markdown.extensions.admonition
-  - markdown.extensions.codehilite
-  - markdown.extensions.footnotes
-  - markdown.extensions.meta
-  - markdown.extensions.toc(permalink=true)
   - pymdownx.arithmatex
   - pymdownx.betterem(smart_enable=all)
   - pymdownx.caret
