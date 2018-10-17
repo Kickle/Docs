@@ -1,6 +1,6 @@
 # Configuring and Administering Kickle
 
-![Kickle] (/img/kickle.png)
+![Kickle] (/img/Kickle.png)
 
 ## About Kickle
 
