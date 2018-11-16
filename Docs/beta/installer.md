@@ -27,7 +27,10 @@ Here is the list of supported hardware [http://support.kickleforskype.com/suppor
 
 **Domain** : Do not join your Windows 10 to a domain before installing Kickle. You can join to the domain after installing Kickle.
 
+**Default Admin User**: Local Administrator should have a default password (otherwise autologin is not working properly)
+
 ##OS Configuration
+
 During installation, the installer will change the Windows configuration to offer a "kiosk" experience.
 The list below details the entire operation :
 
